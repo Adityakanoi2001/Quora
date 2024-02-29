@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:weightSum="1"
+    tools:context=".RegisterActivity">
+
+
+    <ImageView
+        android:layout_weight="0.05"
+        android:layout_gravity="center"
+        android:id="@+id/imageView"
+        android:layout_width="210dp"
+        android:layout_height="73dp"
+        app:srcCompat="@drawable/quora_name"
+        tools:layout_editor_absoluteX="91dp"
+        tools:layout_editor_absoluteY="35dp" />
+
+    <EditText
+        android:layout_weight="0.05"
+        android:id="@+id/et_userdetail_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:hint="User Name"
+        tools:layout_editor_absoluteX="21dp"
+        tools:layout_editor_absoluteY="157dp" />
+
+    <EditText
+        android:id="@+id/et_bio"
+        android:layout_weight="0.05"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:hint="Bio"
+        tools:layout_editor_absoluteX="20dp"
+        tools:layout_editor_absoluteY="222dp" />
+
+    <EditText
+        android:layout_weight="0.05"
+        android:id="@+id/et_image"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:hint="Image"
+        tools:layout_editor_absoluteX="20dp"
+        tools:layout_editor_absoluteY="292dp" />
+
+    <Button
+        android:layout_marginTop="60dp"
+        android:id="@+id/submit"
+        android:layout_gravity="center"
+        android:textAllCaps="false"
+        android:backgroundTint="#AA2200"
+        android:text="Submit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        />
+</LinearLayout>

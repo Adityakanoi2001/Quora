@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:name=".application.ApplicationClass"
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:networkSecurityConfig="@xml/network_config"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.Quora"
+        android:usesCleartextTraffic="true"
+        tools:targetApi="24">
+        <activity
+            android:name=".SearchQuestionActivity"
+            android:exported="false" />
+        <activity
+            android:name=".SecondLevelComment"
+            android:exported="false" />
+        <activity
+            android:name=".Ads"
+            android:exported="false" />
+        <activity
+            android:name=".ListOfBusinessProfile"
+            android:exported="false" />
+        <activity
+            android:name=".BusinessAdditionalDetails"
+            android:exported="false" />
+        <activity
+            android:name=".BuisnessProfileRegistration"
+            android:exported="false" />
+        <activity
+            android:name=".ModeratorProfile"
+            android:exported="false" />
+        <activity
+            android:name=".ViewBusinessProfile"
+            android:exported="false" />
+        <activity
+            android:name=".CommentActivity"
+            android:exported="false" />
+        <activity
+            android:name=".GetAllQuestionsActivity"
+            android:exported="false" />
+        <activity
+            android:name=".UsersActivity"
+            android:exported="false" />
+        <activity
+            android:name=".UserAdditionalDetails"
+            android:exported="false" />
+        <activity
+            android:name=".GetAllAnswersUser"
+            android:exported="false" />
+        <activity
+            android:name=".GetAllQuestionUserActivity"
+            android:exported="false" />
+        <activity
+            android:name=".FollowingActivity"
+            android:exported="false" />
+        <activity
+            android:name=".FollowerActivity"
+            android:exported="false" />
+        <activity
+            android:name=".NotificationActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ReadMoreActivity"
+            android:exported="false" />
+        <activity
+            android:name=".AnsweringQuestionActivity"
+            android:exported="false" />
+        <activity
+            android:name=".DefaultQuestionsActivity"
+            android:exported="false" />
+        <activity
+            android:name=".AskQuestionActivity"
+            android:exported="false" />
+        <activity
+            android:name=".HomeActivity"
+            android:exported="false" />
+        <activity
+            android:name=".LoginActivity"
+            android:exported="false" />
+        <activity
+            android:name=".UserProfileActivity"
+            android:exported="false" />
+        <activity
+            android:name=".RegisterActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <service
+            android:name=".PushNotificationService"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+            </intent-filter>
+        </service>
+    </application>
+
+</manifest>
